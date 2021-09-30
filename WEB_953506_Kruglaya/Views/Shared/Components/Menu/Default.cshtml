@@ -2,13 +2,13 @@
 
 @model IEnumerable<MenuItem>
 
-<ul>
+<ul class="navbar-nav">
     @foreach (var item in Model)
     {
         @if (item.IsPage)
         {
-            <li>
-                <a class="nav-item nav-link @item.Active"
+            <li class="nav-item">
+                <a class="nav-link @item.Active"
                     asp-area="@item.Area"
                     asp-page="@item.Page">
                     @item.Text
@@ -17,8 +17,8 @@
         }
         else
         {
-            <li>
-                <a class="nav-item nav-link @item.Active"
+            <li class="nav-item">
+                <a class="nav-link @item.Active"
                     asp-controller="@item.Controller"
                     asp-action="/@item.Action">
                     @item.Text

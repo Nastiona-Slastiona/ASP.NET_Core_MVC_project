@@ -47,7 +47,7 @@ namespace WEB_953506_Kruglaya
 
             services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = $"/identity/account/login";
+                options.LoginPath = $"/Identity/Account/Login";
                 options.LogoutPath = $"/Identity/Account/Logout";
             });
         }
