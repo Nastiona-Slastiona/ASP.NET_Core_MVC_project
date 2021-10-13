@@ -79,7 +79,7 @@ namespace WEB_953506_Kruglaya
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Moovie}/{action=Index_my}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

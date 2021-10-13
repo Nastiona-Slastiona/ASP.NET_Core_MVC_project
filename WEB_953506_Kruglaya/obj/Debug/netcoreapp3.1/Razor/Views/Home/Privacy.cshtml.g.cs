@@ -26,8 +26,15 @@ using WEB_953506_Kruglaya.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
+using WEB_953506_Kruglaya.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8ddb6bffa5a9b264bf8f89038bf03c234083fd3", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7e30ec69431abe94b1365ad1a0911eac158f5596", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e77ec1f065fd6aa3d0f7e45c88d1c12b48ebffb9", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

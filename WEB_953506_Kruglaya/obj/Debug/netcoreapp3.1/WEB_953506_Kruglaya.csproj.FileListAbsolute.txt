@@ -349,3 +349,6 @@ C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\ob
 C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Views\Moovie\Index_my.cshtml.g.cs
+C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Views\Moovie\_ListItemPartial.cshtml.g.cs
+C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\obj\Debug\netcoreapp3.1\Razor\Views\Moovie\_ListPartial.cshtml.g.cs

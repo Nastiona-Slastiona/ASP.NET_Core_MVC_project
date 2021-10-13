@@ -11,12 +11,10 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-md">
-                <a class="navbar-brand" asp-action="Index" asp-controller="Home">
+                <a class="navbar-brand" asp-action="Index_my" asp-controller="Moovie">
                     WebLabsV06
                 </a>
-                @*<div class="navbar-nav">*@
                     @await Component.InvokeAsync("Menu")
-                @*</div>*@
                 <partial name="_UserPartial" />
             </nav>
         </div>

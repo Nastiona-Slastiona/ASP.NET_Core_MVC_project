@@ -26,8 +26,15 @@ using WEB_953506_Kruglaya.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
+using WEB_953506_Kruglaya.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a77600fa6d25af985e5a678a8b9259efe6828613", @"/Views/Shared/Components/Menu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7e30ec69431abe94b1365ad1a0911eac158f5596", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e77ec1f065fd6aa3d0f7e45c88d1c12b48ebffb9", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Menu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<MenuItem>>
     {
         #line hidden
@@ -74,7 +81,7 @@ using WEB_953506_Kruglaya.Models;
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77600fa6d25af985e5a678a8b9259efe68286133897", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77600fa6d25af985e5a678a8b9259efe68286134115", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 14 "C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\Views\Shared\Components\Menu\Default.cshtml"
@@ -138,7 +145,7 @@ AddHtmlAttributeValue(" ", 209, item.Active, 210, 12, false);
 #line hidden
 #nullable disable
             WriteLiteral("            <li class=\"nav-item\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77600fa6d25af985e5a678a8b9259efe68286137444", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a77600fa6d25af985e5a678a8b9259efe68286137662", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 24 "C:\Universe\3course\ИГИ\Labs\Lab_1\WEB_953506_Kruglaya\WEB_953506_Kruglaya\Views\Shared\Components\Menu\Default.cshtml"

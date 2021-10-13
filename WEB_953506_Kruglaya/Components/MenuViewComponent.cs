@@ -10,8 +10,8 @@ namespace WEB_953506_Kruglaya.Components
     {
         private List<Models.MenuItem> _menuItems = new List<Models.MenuItem>
         {
-            new Models.MenuItem{ Controller="Home", Action="Index", Text="Lab 3"},
-            new Models.MenuItem{ Controller="Product", Action="Index", Text="Каталог"},
+            new Models.MenuItem{ Controller="Home", Action="Index", Text="Lab 6"},
+            new Models.MenuItem{ Controller="Moovie", Action="Index_my", Text="Catalog"},
             new Models.MenuItem{ IsPage=true, Area="Admin", Page="/Index", Text="Администрирование"}
         };
 
