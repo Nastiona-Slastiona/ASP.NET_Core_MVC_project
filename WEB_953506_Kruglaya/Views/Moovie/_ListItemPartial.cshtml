@@ -14,7 +14,7 @@
         <div class="card-text badge badge-secondary">
             <h6>@Model.Time минут</h6>
         </div>
-        @{ // Получение текущего адреса
+        @{ 
             var request = ViewContext.HttpContext.Request;
             var returnUrl = request.Path +
             request.QueryString.ToUriComponent();

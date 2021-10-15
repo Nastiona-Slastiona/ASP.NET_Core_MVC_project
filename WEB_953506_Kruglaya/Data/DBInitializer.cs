@@ -44,7 +44,7 @@ namespace WEB_953506_Kruglaya.Data
                 await userManager.AddToRoleAsync(admin, "admin");
             }
 
-           /* if (!context.Categories.Any())
+            if (!context.Categories.Any())
             {
                 context.Categories.AddRange(
                     new List<Category>
@@ -62,15 +62,15 @@ namespace WEB_953506_Kruglaya.Data
                 context.Moovies.AddRange(
                     new List<Moovie>
                     {
-                          new Moovie{ID = 1, Name = "В погоне за счастьем", Description = "Moovie about men's life.", CategoryID = 1, Time = 90, Image = "First.jpg" },
-                          new Moovie{ID = 1, Name = "Всегда говори Да", Description = "Moovie about men's life.", CategoryID = 2, Time = 120, Image = "Second.jpg" },
-                          new Moovie{ID = 1, Name = "La-La-Land", Description = "Moovie about men's life.", CategoryID = 3, Time = 115, Image = "3.jpg" },
-                          new Moovie{ID = 1, Name = "Оно", Description = "Moovie about men's life.", CategoryID = 4, Time = 113, Image = "4.jpg" },
-                          new Moovie{ID = 1, Name = "Отпетые мошенницы", Description = "Moovie about men's life.", CategoryID = 2, Time = 120, Image = "5.jpg" }
+                          new Moovie{ Name = "В погоне за счастьем", Description = "Moovie about men's life.", CategoryID = 1, Time = 90, Image = "First.jpg" },
+                          new Moovie{ Name = "Всегда говори Да", Description = "Moovie about men's life.", CategoryID = 2, Time = 120, Image = "Second.jpg" },
+                          new Moovie{ Name = "La-La-Land", Description = "Moovie about men's life.", CategoryID = 3, Time = 115, Image = "3.jpg" },
+                          new Moovie{ Name = "Оно", Description = "Moovie about men's life.", CategoryID = 4, Time = 113, Image = "4.jpg" },
+                          new Moovie{ Name = "Отпетые мошенницы", Description = "Moovie about men's life.", CategoryID = 2, Time = 120, Image = "5.jpg" }
 
                     });
                 await context.SaveChangesAsync();
-            }*/
+            }
         }
     }
 }

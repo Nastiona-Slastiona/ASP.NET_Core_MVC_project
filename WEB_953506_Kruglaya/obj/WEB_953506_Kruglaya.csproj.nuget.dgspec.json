@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Universe\\3course\\ИГИ\\Labs\\Lab_1\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {}
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {}
   },
   "projects": {
-    "C:\\Universe\\3course\\ИГИ\\Labs\\Lab_1\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Universe\\3course\\ИГИ\\Labs\\Lab_1\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
+        "projectUniqueName": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
         "projectName": "WEB_953506_Kruglaya",
-        "projectPath": "C:\\Universe\\3course\\ИГИ\\Labs\\Lab_1\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
+        "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
         "packagesPath": "C:\\Users\\ariai\\.nuget\\packages\\",
-        "outputPath": "C:\\Universe\\3course\\ИГИ\\Labs\\Lab_1\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya\\obj\\",
+        "outputPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\ariai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,6 +81,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.20, 3.1.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -90,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,35 +13,34 @@ namespace WEB_953506_Kruglaya.Controllers
     public class MoovieController : Controller
     {
         ApplicationDbContext _context;
-        public List<Moovie> _mooviesList;
-        public List<Category> _categoriesList;
+        /*public List<Moovie> _mooviesList;
+        public List<Category> _categoriesList;*/
         int _pageSize;
 
         public MoovieController(ApplicationDbContext context)
         {
             _pageSize = 3;
             _context = context;
-            ListsInit();
+            /*ListsInit();*/
         }
 
-        /*[Route("Moovie")]*/
-        /*[Route("Catalog/page_{page}")]*/
+        [Route("Moovie/%2FIndex_my")]
+        [Route("page_{page}")]
         public IActionResult Index_my(int? categories, int page=1)
         {
-            var mooviesFilt = _mooviesList
+            var mooviesFilt = _context.Moovies
                 .Where(m => !categories.HasValue || m.CategoryID == categories.Value);
             ViewData["Text"] = "MoovieController";
-            ViewData["Categories"] = _categoriesList;
+            ViewData["Categories"] = _context.Categories;
             ViewData["CurrentCategory"] = categories ?? 0;
             var model = ListViewModel<Moovie>.GetModel(mooviesFilt, page, _pageSize);
             if (Request.IsAjaxRequest())
                 return PartialView("_listpartial", model);
             else
                 return View(model);
-            return View(ListViewModel<Moovie>.GetModel(mooviesFilt, page, _pageSize));
         }
 
-        public void ListsInit()
+       /* public void ListsInit()
         {
             _categoriesList = new List<Category>
             {
@@ -57,7 +56,7 @@ namespace WEB_953506_Kruglaya.Controllers
                 new Moovie{ID = 1, Name = "Оно", Description = "Moovie about men's life.", CategoryID = 4, Time = 113, Category_=_categoriesList[3], Image = "4.jpg" },
                 new Moovie{ID = 1, Name = "Отпетые мошенницы", Description = "Moovie about men's life.", CategoryID = 2, Time = 120, Category_=_categoriesList[2], Image = "5.jpg" }
             };
-        }
+        }*/
 
     }
 }

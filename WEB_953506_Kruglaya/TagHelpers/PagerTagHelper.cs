@@ -11,7 +11,7 @@ namespace WEB_953506_Kruglaya.TagHelpers
         public int PageTotal { get; set; }
         public string PagerClass { get; set; }
         public string Action { get; set; }
-        public string Controller { get; set; }
+        public string Controller { get; set; } 
         public int? CategoryId { get; set; }
 
         public PagerTagHelper(LinkGenerator linkGenerator)
@@ -24,11 +24,29 @@ namespace WEB_953506_Kruglaya.TagHelpers
             output.TagName = "nav";
             output.TagMode = TagMode.StartTagAndEndTag;
             var ulTag = new TagBuilder("ul");
-            ulTag.AddCssClass("pagination");
+            ulTag.AddCssClass("pagination pagination-lg");
             ulTag.AddCssClass(PagerClass);
+            
+
+            var url = _linkGenerator.GetPathByAction(Action,
+               Controller,
+               new
+               {
+                   page = PageCurrent - 1,
+                   categories = CategoryId == 0
+                           ? null
+                           : CategoryId
+               });
+            var item = GetPagerItem(
+            url: url, text: "Previous",
+            active: false,
+            disabled: false
+            );
+            ulTag.InnerHtml.AppendHtml(item);
+
             for (int i = 1; i <= PageTotal; i++)
             {
-                var url = _linkGenerator.GetPathByAction(Action,
+                url =_linkGenerator.GetPathByAction(Action,
                 Controller,
                 new
                 {
@@ -37,13 +55,29 @@ namespace WEB_953506_Kruglaya.TagHelpers
                             ?null
                             : CategoryId
                 });
-                var item = GetPagerItem(
+                item = GetPagerItem(
                 url: url, text: i.ToString(),
                 active: i == PageCurrent,
                 disabled: i == PageCurrent
                 );
                 ulTag.InnerHtml.AppendHtml(item);
             }
+            url =   _linkGenerator.GetPathByAction(Action,
+              Controller,
+              new
+              {
+                  page = PageCurrent != PageTotal ? PageCurrent + 1 : PageTotal,
+                  categories = CategoryId == 0
+                          ? null
+                          : CategoryId
+              });
+            url = PageCurrent != PageTotal ? url : "";
+            item = GetPagerItem(
+            url: url, text: "Next",
+            active: false,
+            disabled: false
+            );
+            ulTag.InnerHtml.AppendHtml(item);
             output.Content.AppendHtml(ulTag);
         }
 
