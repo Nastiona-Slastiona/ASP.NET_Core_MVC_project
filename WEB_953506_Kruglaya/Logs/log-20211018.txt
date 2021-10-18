@@ -24,3 +24,6 @@
 2021-10-18T23:12:41.5995718+03:00  [INF] Request /Moovie/lib/font-awesome/css/all.css returns status code 404 (12544947)
 2021-10-18T23:12:47.8670958+03:00  [INF] info: category=, page=1 (7a9a20e9)
 2021-10-18T23:12:47.9369619+03:00  [INF] Request /Moovie/lib/font-awesome/css/all.css returns status code 404 (12544947)
+2021-10-18T23:15:58.3239569+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-10-18T23:15:58.3393143+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-10-18T23:15:58.3394508+03:00  [INF] Content root path: "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya" (b5d60022)
