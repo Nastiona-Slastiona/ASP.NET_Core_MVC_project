@@ -27,7 +27,7 @@ using WEB_953506_Kruglaya.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
+#line 3 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
 using WEB_953506_Kruglaya.Entities;
 
 #line default
@@ -41,7 +41,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41fa0fd5bff607768ba79bc1dbaf87a91d7e87ec", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e77ec1f065fd6aa3d0f7e45c88d1c12b48ebffb9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a28f32a23838868479223be928edba020c0e565", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("nav-link text-dark"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

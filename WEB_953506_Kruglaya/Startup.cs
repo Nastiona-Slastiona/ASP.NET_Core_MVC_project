@@ -1,12 +1,17 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using WEB_953506_Kruglaya.Data;
 using WEB_953506_Kruglaya.Entities;
+using WEB_953506_Kruglaya.Extensions;
+using WEB_953506_Kruglaya.Models;
+using WEB_953506_Kruglaya.Services;
 
 namespace WEB_953506_Kruglaya
 {
@@ -38,7 +43,15 @@ namespace WEB_953506_Kruglaya
             services.AddAuthorization();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddDistributedMemoryCache();
+            services.AddSession(opt =>
+            {
+                opt.Cookie.HttpOnly = true;
+                opt.Cookie.IsEssential = true;
+            });
 
+            services.AddScoped<Cart>(sp => CartService.GetCart(sp));
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = $"/Identity/Account/Login";
@@ -47,8 +60,14 @@ namespace WEB_953506_Kruglaya
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext context, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+        public void Configure(IApplicationBuilder app, 
+                              IWebHostEnvironment env,
+                              ApplicationDbContext context,
+                              UserManager<ApplicationUser> userManager,
+                              RoleManager<IdentityRole> roleManager,
+                              ILoggerFactory logger)
         {
+            logger.AddFile("Logs/log-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -66,9 +85,11 @@ namespace WEB_953506_Kruglaya
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseSession();
             app.UseAuthorization();
             DBInitializer.Seed(context, userManager, roleManager).Wait();
 
+            app.UseFileLogging();
             app.UseEndpoints(endpoints =>
             {
 

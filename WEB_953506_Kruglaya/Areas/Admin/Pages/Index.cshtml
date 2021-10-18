@@ -1,0 +1,67 @@
+﻿@page
+@model WEB_953506_Kruglaya.Areas.Admin.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p class="mt-2">
+    <a asp-page="./Create"  asp-route-id=0  class="btn btn-outline-dark">
+        <span class="fa fa-plus"> Create New</span>
+        </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Moovie[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Moovie[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Moovie[0].Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Moovie[0].Category_)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Moovie[0].Time)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Moovie) {
+        <tr>
+            <td>
+                <img src="~/Images/@item.Image" alt="..." width="50"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category_.CategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-outline-dark">
+                    <span class="fas fa-edit"></span></a> |
+                <a asp-page="./Details" asp-route-id="@item.ID" class="btn btn-outline-dark">
+                    <span class="fas fa-list-ul"></span></a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-outline-dark">
+                    <span class="fas fa-trash-alt" ></span></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

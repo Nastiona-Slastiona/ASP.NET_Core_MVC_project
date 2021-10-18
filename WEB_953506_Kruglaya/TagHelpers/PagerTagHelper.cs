@@ -88,7 +88,7 @@ namespace WEB_953506_Kruglaya.TagHelpers
             liTag.AddCssClass(active ? "active" : "");
             var aTag = new TagBuilder("a");
             aTag.AddCssClass("page-link");
-            aTag.Attributes.Add("href", url);
+            aTag.Attributes.Add("href",url);
             aTag.InnerHtml.Append(text);
             liTag.InnerHtml.AppendHtml(aTag);
             return liTag;

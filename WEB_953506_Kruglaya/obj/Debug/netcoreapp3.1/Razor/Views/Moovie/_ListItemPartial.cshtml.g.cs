@@ -27,14 +27,14 @@ using WEB_953506_Kruglaya.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
+#line 3 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
 using WEB_953506_Kruglaya.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76a990c028001a4eaad6072e5238dfc1434b675c", @"/Views/Moovie/_ListItemPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e77ec1f065fd6aa3d0f7e45c88d1c12b48ebffb9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a28f32a23838868479223be928edba020c0e565", @"/Views/_ViewImports.cshtml")]
     public class Views_Moovie__ListItemPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<WEB_953506_Kruglaya.Entities.Moovie>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString("..."), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.SingleQuotes);

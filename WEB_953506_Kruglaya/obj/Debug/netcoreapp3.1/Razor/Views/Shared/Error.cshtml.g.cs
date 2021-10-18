@@ -27,14 +27,14 @@ using WEB_953506_Kruglaya.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
+#line 3 "D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya\Views\_ViewImports.cshtml"
 using WEB_953506_Kruglaya.Entities;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e77ec1f065fd6aa3d0f7e45c88d1c12b48ebffb9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a28f32a23838868479223be928edba020c0e565", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998
