@@ -15,20 +15,17 @@ namespace WEB_953506_Kruglaya.Controllers
     {
         ApplicationDbContext _context;
         int _pageSize;
-        private ILogger _logger;
 
         public MoovieController(ApplicationDbContext context, ILogger<MoovieController> logger)
         {
             _pageSize = 3;
             _context = context;
-            _logger = logger;
         }
 
         [Route("Moovie/Index_my")]
         [Route("page_{page}")]
         public IActionResult Index_my(int? categories, int page=1)
         {
-            _logger.LogInformation($"info: category={categories}, page={page}");
             var mooviesFilt = _context.Moovies
                 .Where(m => !categories.HasValue || m.CategoryID == categories.Value);
             ViewData["Text"] = "MoovieController";

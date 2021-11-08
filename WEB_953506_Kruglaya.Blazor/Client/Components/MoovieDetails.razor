@@ -1,0 +1,23 @@
+﻿@if (Moovie != null)
+{
+    <img src="@imageSrc" class="img-thumbnail" width="150"/>
+    <div>
+        <p>@Moovie.MoovieName - @Moovie.Description</p>
+        <p>@Moovie.Time minut</p>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public DetailsViewModel Moovie { get; set; }
+    [Parameter]
+    public EventCallback<DetailsViewModel> MoovieChanged { get; set; }
+    string imageSrc
+    {
+        get
+        {
+            return $"images/{Moovie.Image}";
+        }
+    }
+
+}

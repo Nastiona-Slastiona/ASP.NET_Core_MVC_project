@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,12 +25,14 @@ namespace WEB_953506_Kruglaya
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+       
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            
+            services.AddDbContext<ApplicationDbContext>(opt =>
+               opt.UseSqlServer(
+                   Configuration.GetConnectionString("DefaultConnection"))
+            );
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
@@ -40,6 +43,7 @@ namespace WEB_953506_Kruglaya
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
             services.AddAuthorization();
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -52,6 +56,9 @@ namespace WEB_953506_Kruglaya
             });
 
             services.AddScoped<Cart>(sp => CartService.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = $"/Identity/Account/Login";
@@ -59,7 +66,7 @@ namespace WEB_953506_Kruglaya
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+       
         public void Configure(IApplicationBuilder app, 
                               IWebHostEnvironment env,
                               ApplicationDbContext context,
@@ -68,6 +75,8 @@ namespace WEB_953506_Kruglaya
                               ILoggerFactory logger)
         {
             logger.AddFile("Logs/log-{Date}.txt");
+            app.UseFileLogging();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -76,23 +85,19 @@ namespace WEB_953506_Kruglaya
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseSession();
             app.UseAuthorization();
+
             DBInitializer.Seed(context, userManager, roleManager).Wait();
 
-            app.UseFileLogging();
             app.UseEndpoints(endpoints =>
             {
-
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

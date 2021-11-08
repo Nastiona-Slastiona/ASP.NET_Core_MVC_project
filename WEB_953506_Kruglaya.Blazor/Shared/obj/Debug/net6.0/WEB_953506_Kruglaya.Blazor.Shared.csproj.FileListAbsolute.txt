@@ -1,0 +1,13 @@
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\bin\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.deps.json
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\bin\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.dll
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\bin\Debug\net6.0\ref\WEB_953506_Kruglaya.Blazor.Shared.dll
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\bin\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.pdb
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.GlobalUsings.g.cs
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.csproj.AssemblyReference.cache
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.AssemblyInfoInputs.cache
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.AssemblyInfo.cs
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.csproj.CoreCompileInputs.cache
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.dll
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\ref\WEB_953506_Kruglaya.Blazor.Shared.dll
+D:\University\InfGI\ASP.NET_Core_MVC_project\WEB_953506_Kruglaya.Blazor\Shared\obj\Debug\net6.0\WEB_953506_Kruglaya.Blazor.Shared.pdb

@@ -9,7 +9,7 @@ namespace WEB_953506_Kruglaya.Middleware
         RequestDelegate _next;
         ILogger<LogMiddleware> _logger;
         public LogMiddleware(RequestDelegate next,
-        ILogger<LogMiddleware> logger)
+                                ILogger<LogMiddleware> logger)
         {
             _next = next;
             _logger = logger;

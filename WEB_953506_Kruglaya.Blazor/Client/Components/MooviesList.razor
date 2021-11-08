@@ -1,0 +1,39 @@
+﻿<h3>MooviesList</h3>
+@if (Moovies == null)
+{
+    <p>Загрузка ...</p>
+}
+else if (Moovies != null)
+{
+    <div class="list-group">
+        @{
+            var i = 1;
+            foreach (var moovie in Moovies)
+            {
+                <button type="button" 
+                    class="list-group-item list-group-item-action
+                    @(SelectedId == moovie.MoovieId ? "active" : "")"
+                    @onclick="@(e => Selected(e, moovie.MoovieId))">
+                    @(i++) - @moovie.MoovieName
+                    
+                </button>
+            }
+        }
+    </div>
+}
+@code {
+    [Parameter]
+    public IEnumerable<ListViewModel> Moovies { get; set; }
+    [Parameter]
+    public EventCallback<IEnumerable<ListViewModel>> MooviesChanged { get; set; }
+    
+    private int SelectedId = 0;
+    [Parameter]
+    public EventCallback<int> SelectObjectChanged { get; set; }
+
+    private void Selected(MouseEventArgs e, int id)
+    {
+        SelectedId = id;
+        SelectObjectChanged.InvokeAsync(id);
+    }
+} 

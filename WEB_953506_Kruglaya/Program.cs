@@ -26,6 +26,7 @@ namespace WEB_953506_Kruglaya
                 {
                     lp.ClearProviders();
                     lp.AddFilter("Microsoft", LogLevel.None);
+                    lp.AddFilter("Microsoft.Hosting.Lifetime", LogLevel.None);
                 });
     }
 }

@@ -1,0 +1,338 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Server\\WEB_953506_Kruglaya.Blazor.Server.csproj": {}
+  },
+  "projects": {
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\WEB_953506_Kruglaya.Blazor.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\WEB_953506_Kruglaya.Blazor.Client.csproj",
+        "projectName": "WEB_953506_Kruglaya.Blazor.Client",
+        "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\WEB_953506_Kruglaya.Blazor.Client.csproj",
+        "packagesPath": "C:\\Users\\ariai\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ariai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj": {
+                "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.10, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.0-rc.2.21480.5, 6.0.0-rc.2.21480.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Server\\WEB_953506_Kruglaya.Blazor.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Server\\WEB_953506_Kruglaya.Blazor.Server.csproj",
+        "projectName": "WEB_953506_Kruglaya.Blazor.Server",
+        "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Server\\WEB_953506_Kruglaya.Blazor.Server.csproj",
+        "packagesPath": "C:\\Users\\ariai\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ariai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\WEB_953506_Kruglaya.Blazor.Client.csproj": {
+                "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Client\\WEB_953506_Kruglaya.Blazor.Client.csproj"
+              },
+              "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj": {
+                "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj"
+              },
+              "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {
+                "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21511.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj",
+        "projectName": "WEB_953506_Kruglaya.Blazor.Shared",
+        "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\WEB_953506_Kruglaya.Blazor.Shared.csproj",
+        "packagesPath": "C:\\Users\\ariai\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya.Blazor\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ariai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
+        "projectName": "WEB_953506_Kruglaya",
+        "projectPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\WEB_953506_Kruglaya.csproj",
+        "packagesPath": "C:\\Users\\ariai\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\InfGI\\ASP.NET_Core_MVC_project\\WEB_953506_Kruglaya\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ariai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.20, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
